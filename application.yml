@@ -1,9 +1,5 @@
-server:
-  port: 6111
 spring:
   profiles:
-    active: dev
-  application:
-    name: config-server
- from: 
-     git-deafault-2.0
+    active: dev-peer1
+application:
+  name: server
