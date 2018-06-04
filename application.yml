@@ -5,3 +5,5 @@ spring:
     active: dev
   application:
     name: config-server
+ from: 
+     git-deafault-2.0
