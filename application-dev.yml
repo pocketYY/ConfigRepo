@@ -10,3 +10,5 @@ spring:
           uri: https://github.com/pocketYY/ConfigRepo.git
           username: 304680078@qq.com
           password: lmlmd12301230
+  from: 
+     git-deafault-2.0
