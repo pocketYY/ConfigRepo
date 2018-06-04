@@ -1,9 +1,1 @@
-server:
-  port: 6111
-spring:
-  profiles:
-    active: dev
-  application:
-    name: config-server
- from: 
-     git-deafault-1.0
+from: git-deafault-1.0
