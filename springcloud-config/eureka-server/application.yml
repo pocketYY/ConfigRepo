@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: dev-peer1
+application:
+  name: server
