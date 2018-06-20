@@ -18,3 +18,4 @@ eureka:
       defaultZone: http://peer2:1114/eureka/
     register-with-eureka: false
     fetch-registry: false
+hello: world
