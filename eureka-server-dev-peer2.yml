@@ -23,4 +23,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
 
-hello: hello world 111
+hello: hello world 1111
