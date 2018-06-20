@@ -8,6 +8,10 @@ spring:
     password: 123456
   application:
     name: eureka-server
+  cloud:
+    bus:
+      trace:
+        enabled: true
 eureka:
   instance:
     hostname: peer1
@@ -18,4 +22,9 @@ eureka:
       defaultZone: http://peer2:1114/eureka/
     register-with-eureka: false
     fetch-registry: false
+
 hello: world！
+
+management:
+  security:
+    enabled: false
