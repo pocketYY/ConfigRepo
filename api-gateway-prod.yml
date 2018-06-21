@@ -23,4 +23,4 @@ hystrix:
     isolation:
       thread:
        timeoutInMilliseconds: 9000
-hello: world!!!
+hello: world!!!!
