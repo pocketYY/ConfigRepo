@@ -7,10 +7,10 @@ spring:
 zuul:
   routes:
     api-a:
-     path: /api-a/**
+     path: /api-video/**
      serviceId: SERVIE-A
     api-b:
-      path: /api-b/**
+      path: /admin-video/**
       serviceId: feign-consumer
   add-host-header: true
 feign:
