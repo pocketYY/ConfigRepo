@@ -1,0 +1,20 @@
+zuul:
+  routes:
+    api-a:
+     path: /api-a/**
+     serviceId: SERVIE-A
+    api-b:
+      path: /api-b/**
+      serviceId: feign-consumer
+  add-host-header: true
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+ command:
+  default:
+   execution:
+    isolation:
+      thread:
+       timeoutInMilliseconds: 9000
+hello: world
