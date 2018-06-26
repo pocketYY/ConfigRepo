@@ -10,9 +10,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.6.254:3306/video?useUnicode=true&characterEncoding=utf8
-    username: video
-    password: video
+    url: jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
     initialSize: 1
     minIdle: 3
     maxActive: 20
@@ -50,3 +50,7 @@ spring:
         max-active: 100
         # 连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1
+grpc:
+  server:
+    host: 192.168.4.105
+    port: 7052

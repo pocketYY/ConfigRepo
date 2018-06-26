@@ -1,11 +1,11 @@
 bootdo:
-  uploadPath: /var/uploaded_files/
+  uploadPath: D:/var/uploaded_files/
 serverMonitorAPI:
     url: http://192.168.6.15:8000/api/v1/service
 logging:
   level:
-    root: error
-    com.bootdo: info
+    root: info
+    com.bootdo: debug
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -51,6 +51,7 @@ spring:
         # 连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1
 grpc:
-  server:
-    host: 192.168.4.105
-    port: 7052
+  client:
+    video-admin:
+      host: 192.168.4.105
+      port: 7052
