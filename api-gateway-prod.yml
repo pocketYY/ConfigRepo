@@ -6,12 +6,10 @@ spring:
         password: 123456
 zuul:
   routes:
-    api-a:
-     path: /api-a/**
-     serviceId: SERVIE-A
-    api-b:
-      path: /api-b/**
-      serviceId: feign-consumer
+    video-admin:
+        path: /video-admin/**
+    video-api:
+        path: /video-api/**
   add-host-header: true
 feign:
   hystrix:
@@ -23,4 +21,3 @@ hystrix:
     isolation:
       thread:
        timeoutInMilliseconds: 9000
-hello: world!!!!
