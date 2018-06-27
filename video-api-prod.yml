@@ -56,7 +56,5 @@ spring:
           username: springcloud
           password: 123456
 grpc:
-  client:
-    video-admin:
-      host: 192.168.4.105
-      port: 7052
+  eureka:
+    service-id: video-admin

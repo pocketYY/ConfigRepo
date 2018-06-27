@@ -57,5 +57,4 @@ spring:
           password: 123456
 grpc:
   server:
-    host: 192.168.4.105
     port: 7052
