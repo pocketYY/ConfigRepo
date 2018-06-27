@@ -10,7 +10,7 @@ zuul:
      path: /video-admin/**
     video-api:
       path: /video-api/**
-  add-host-header: true
+  add-host-header: false
 feign:
   hystrix:
     enabled: true
