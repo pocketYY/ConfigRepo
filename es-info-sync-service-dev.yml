@@ -1,6 +1,6 @@
 #服务端口配置
 server:
-  port: 8000
+  port: 9000
 #spring cloud服务发现配置
 eureka:
   client:
@@ -8,16 +8,16 @@ eureka:
           defaultZone: http\://${eureka.instance.hostname}\:${eureka.port}/eureka/
   instance:
     prefer-ip-address: true
-    hostname: 127.0.0.1
-  port: 1113
+    hostname: 192.168.6.254
+  port: 8000
 spring:
   #数据源配置
   datasource:
     info:
         driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/zyctd-info?useUnicode=true&characterEncoding=utf8
-        username: root
-        password: root
+        url: jdbc:mysql://192.168.6.254:3306/zyctd-info?useUnicode=true&characterEncoding=utf8
+        username: zyctd
+        password: zyctd
   #mq队列配置
   rabbitmq:
           host: localhost
@@ -28,7 +28,7 @@ spring:
 elasticsearch:
   cluster:
     name: my-application
-    nodes: 127.0.0.1:9300
+    nodes: 192.168.6.254:9300
   pool: 5
 #查询药材产新期
 GetListCodexMonthUrl: http://www.zyctd.net/Ajax/AjaxHandle.ashx
