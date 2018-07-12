@@ -8,7 +8,7 @@ eureka:
           defaultZone: http\://${eureka.instance.hostname}\:${eureka.port}/eureka/
   instance:
     prefer-ip-address: true
-    hostname: 127.0.0.1
+    hostname: peer1
   port: 1113
 spring:
   #数据源配置
